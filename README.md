@@ -29,20 +29,16 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
-![Github Actions](https://github.com/bayudwiyansatria/Development-And-Operations/workflows/Github%20Action/badge.svg)
-
 Global Template Repository for Development and Operations Of Your Projects.
 
 | Key|Values|
 | ------| ----- |
 | Author| Bayu Dwiyan Satria |
 | Email | bayudwiyansatria@gmail.com |
-| Phone | +62-823-9602-9583 |
 | Website | [https://bayudwiyansatria.com](https://bayudwiyansatria.com) |
 
 ## Table of Contents
 
-* [Dependencies](#dependencies)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Development](#development)
@@ -52,39 +48,51 @@ Global Template Repository for Development and Operations Of Your Projects.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
-```shell
-apt-get -y install git
-```
-
-Or
-
-```shell
-yum -y install git
-```
+- Terraform Installed 
+- Virtual Machines (VM)
 
 ### Installation
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be clone this repository.
+1. Clone this repository
 
 ```shell
-git clone git@github.com:bayudwiyansatria/Development-And-Operations.git
+$ git clone https://github.com/bayudwiyansatria/terraform-services-nginx.git
+```
+
+2. Init
+
+```shell
+$ terraform init
+```
+
+3. Change `terraform.tfvars`
+
+```
+Update terraform variable with yours
+```
+4. Plan
+
+```shell
+$ terraform plan
+```
+
+5. Apply
+
+```shell
+$ terraform apply -var-file=./terraform.tfvars
 ```
 
 ## Development
 
--*Release 1.0* : **2019, Nov**.
+-*Alpha 1.0.0-a.1* : **2021, February**.
 
 ## Usage
 
-Reference and programming instructional materials.
+Install Nginx on Virtual Machines (On-Premises)
 
 ## Contributing
 
@@ -94,10 +102,10 @@ Please make sure to update tests as appropriate.
 
 Looking to contribute to our code but need some help? There's a few ways to get information:
 
-* Connect with us on [Twitter](https://twitter.com/bayudsatria)
-* Like us on [Facebook](https://facebook.com/PBayuDSatria)
-* Follow us on [LinkedIn](https://linkedin.com/in/bayudwiyansatria)
-* Subscribe us on [Youtube](https://youtube.com/channel/UCihxWj1rtheK73mGdrf0OiA)
+* Connect with me [Twitter](https://twitter.com/bayudsatria)
+* Like me [Facebook](https://facebook.com/PBayuDSatria)
+* Follow me [LinkedIn](https://linkedin.com/in/bayudwiyansatria)
+* Subscribe me [Youtube](https://youtube.com/channel/UCihxWj1rtheK73mGdrf0OiA)
 * Log an issue here on github
 
 ## Versioning
@@ -106,13 +114,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **[Bayu Dwiyan Satria](https://github.com/bayudwiyansatria)** - *Initial work*
+* **[Bayu Dwiyan Satria](https://github.com/bayudwiyansatria)**
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-<p> Copyright &copy; 2017 - 2019 Public Use. All Rights Reserved.
+<p> Copyright &copy; 2017 - 2021 Public Use. All Rights Reserved.
 
 ## Acknowledgments
 
